@@ -1,0 +1,251 @@
+html,body{
+    padding: 0px;
+    margin: 0px;
+    /* background-color: aqua; */
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+}
+
+*:focus {
+    outline: transparent;
+}
+
+#menu-bar {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    height: 20px;
+    
+   
+   
+}
+
+#menu-bar > div {
+    height: 20px;
+    padding: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#menu-content-container {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-group {
+    display: flex;
+    flex-direction: column;
+    border-right: 0.5px solid lightgray;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+.menu-row {
+    display: flex;
+    flex-direction: row;
+    margin: 2px;
+}
+
+.menu-row > * {
+    margin: 0px 5px;
+    cursor: pointer;
+    border: 0.5px solid lightgray;
+    border-radius: 2px;
+    height: 21px;
+}
+
+.menu-row > input {
+    width: 25px;
+}
+
+.menu-row > input:hover {
+    transform: scale(1.2);
+}
+
+#font-type {
+    width: 95px;
+    font-size: 12px;
+}
+
+#font-size {
+    width: 60px;
+    font-size: 12px;
+}
+
+#bold.selected, #italic.selected, #underline.selected, #alignment-menu-container input.selected {
+    background-color: teal;
+    color: white;
+}
+
+
+#menu-bar > div:hover, #menu-bar > div.selected {
+    border-top: 1px solid blue;
+}
+
+
+
+#formula-bar {
+    display: flex;
+    flex-direction: row;
+    /* background-color: green; */
+    height: 20px;
+   
+}
+
+#formula-bar > #cellFormula {
+        flex: 3%;
+}
+
+#formula-bar > #separator {
+  flex: 1%;
+   text-align: center; 
+}
+
+#formula-bar > #txtFormula {
+    flex: 96%;
+}
+
+#content-container {
+     /* display: flex;
+    flex-direction: column; */
+    position: relative;
+    /* background-color: black; */
+      height: calc(100vh - 120px); 
+     /* height: 740px; */
+    width: 100%;
+    overflow: auto;
+   
+}
+
+#tl-cell {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 25px;
+    width: 25px;
+    background-color: lightgray;
+     z-index: 3; 
+}
+
+#first-row {
+    position: absolute;
+    top: 0px;
+    left: 25px;
+    height: 25px;
+    text-align: center;
+    
+    background-color: lightgray;
+    display: flex;
+    flex-direction: row;
+     z-index: 1; 
+}
+#first-row .cell {
+    border-color: white;
+    text-align: center;
+    padding-left: 0px;
+
+}
+
+.cell {
+    width: 70px;
+    border: 0.5px solid lightgray;
+    text-align: left;
+    box-sizing: border-box;
+    line-height: 25px;
+    padding-left: 5px;
+    /* position: relative; */
+    /* outline: solid 1px gray; */
+    border-radius: 2px;
+}
+
+.cell.selected {
+    border: 0.5px solid teal;
+}
+
+.cell:focus {
+    outline: transparent solid 2px;
+}
+
+#first-col {
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    width: 25px;
+ 
+    
+    
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+     z-index: 2; 
+}
+
+#first-col .cell {
+    width: 25px;
+     /* background-color:blue; */
+     border-color: white;
+     text-align: center;
+     padding-left: 0px;
+}
+
+#grid {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+}
+
+/* #grid.cell {
+    font-size: 8px;
+} */
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+
+#sheets-bar {
+    display: flex;
+    flex-direction: row;
+    /* background-color: yellow; */
+    height: 20px;
+    
+   
+}
+
+#sheets-bar > div {
+    padding: 2px;
+    font-size: 13px;
+    cursor: pointer;
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+    border-top: 1px lightgray;
+    border-bottom: 1px lightgray;
+    border-radius: 5px;
+} 
+
+#sheets-bar > div:hover{
+    cursor: pointer;
+    border-bottom: 1px solid blue;
+    font-weight: bold;
+
+}
+
+
+
+
+
+
